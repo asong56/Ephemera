@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Ephemera</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div class="w">
+            <header>
+                <div class="wm">Ephemera</div>
+                <div class="tl">A reading queue that forgets</div>
+                <div class="pa">
+                    <div class="pl">
+                        <div class="cl">
+                            <span class="bn" id="N">0</span>
+                            <span class="cd">/ 10</span>
+                        </div>
+                        <span id="PL">empty</span>
+                    </div>
+                    <div class="pt" id="PT"></div>
+                </div>
+            </header>
+
+            <div class="iw">
+                <div class="il" id="IL">
+                    <span class="pfx">→</span>
+                    <input class="ui" id="UI" type="text" placeholder="paste or type a url…" autocomplete="off" spellcheck="false">
+                    <span class="sh" id="SH">return ↵</span>
+                </div>
+                <div class="em" id="EM"></div>
+                <div class="fn" id="FN">Queue is full — remove an item first</div>
+            </div>
+
+            <div class="li" id="LI"></div>
+
+            <div class="es on" id="ES">
+                <div class="es1">Nothing here yet.</div>
+                <div class="es2">Stay intentional.</div>
+            </div>
+
+            <div class="lg">
+                <div class="li2"><div class="lp" style="background:var(--fr)"></div>Fresh &lt;24h</div>
+                <div class="li2"><div class="lp" style="background:var(--ag)"></div>Aging 24–72h</div>
+                <div class="li2"><div class="lp" style="background:var(--st)"></div>Stale 3–7d</div>
+                <div class="li2"><div class="lp" style="background:var(--i4)"></div>Rotting &gt;7d</div>
+            </div>
+        </div>
+        
+        <div class="toast" id="TT"></div>
+
+        <script type="module" src="./scripts.js"></script>
+    </body>
+</html>
