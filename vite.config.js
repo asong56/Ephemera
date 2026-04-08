@@ -15,8 +15,8 @@ export default defineConfig({
         VitePWA({
             registerType: 'autoUpdate',
             manifest: {
-                name: 'Cicada Whiteboard',
-                short_name: 'Cicada',
+                name: 'Ephemera Reading List',
+                short_name: 'Ephemera',
                 icons: [
                     {
                         src: 'assets/web-app-manifest-192x192.png',
